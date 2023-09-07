@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interLet</title>
+    <link href="style.css" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <link rel="icon" href="assets/img/logo.png" type="image/icon type">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Map -->
+    <link href='../../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+<style>
+    .floating{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+               font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+          z-index:100;
+        }
+        
+        .float-button{
+            margin-top:14px;
+        }
+</style>
+</head>
+<body>
+
+    <!--Whatsapp Button-->
+    <a href="https://api.whatsapp.com/send?phone=+917396882106&text=Hello%21%20." class="floating" target="_blank">
+        <i class="fa fa-whatsapp float-button"></i>
+    </a>
+
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md bg-body-tertiary fixed">
+        <div class="container-xl">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Another Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Another Link</a>
+              </li>
+            </ul>
+            <!--<div class="search-and-icons">
+              <form class="d-flex mb-2 me-2" role="search">
+                <input class="form-control me-2" type="search" aria-label="Search">
+              </form>
+              <div class="user-icons d-flex mb-2">
+                <div class="profile"><i class="bi bi-person"></i></div>
+                <div class="wishlist"><i class="bi bi-heart"></i></div>
+                <div class="cart"><i class="bi bi-cart3"></i></div>
+              </div>
+            </div>-->
+            <div class="contact-info d-md-flex">
+              <p>+0987654321 | +1234567890 </p>
+              <p><a href="mailto:">interlet@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <!--Main Carousel-->
+      <div id="carouselExampleCaptions" class="carousel cl slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/bg1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/BG2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/BG3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        
+       <!--Icon Menu-->
+    <div class="container">
+        <div class="row mt-2  mb-8 mb-lg-11"> 
+            <div class="col-md" style="margin-top:105px;">
+                <h2 align="center">Rent At Your Will</h2>
+                <div class="row" style="margin-top: 50px;">
+    
+               
+                <div class="col-md-2 " >
+                                        <img src="assets/img/small/1.png"     height="100px"  width="100px" >                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                </div>
+                <div class="col-md-2">
+                    <img src="assets/img/small/2.png"     height="100px"  width="100px" >     
+                </div>
+                <div class="col-md-2">
+                    <img src="assets/img/small/3.png"     height="100px"  width="100px" >
+                </div>
+                <div class="col-md-2">
+                    <img src="assets/img/small/4.png"     height="100px"  width="100px" >
+                </div>
+                <div class="col-md-2">
+                    <img src="assets/img/small/5.png"     height="100px"  width="100px" >
+                </div>
+                <div class="col-md-2">
+                    <img src="assets/img/small/6.png"     height="100px"  width="100px" >
+                </div>
+            </div>
+    
+                </div>
+                </div>
+                </div>
+
+                      
+<!--Special Discount-->
+      <div class="bg mt-5 ">
+        <div class="bg-product mt-5">
+          <div class="container product">
+            <div class="row">
+              <div id="sliderproduct" class="carousel slide single-review" data-ride="carousel" data-interval="10000">
+                <div class="carousel-inner" role="listbox" data-interval="10000000">
+                  <div class="carousel-item active">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col-sm-6 image">
+                          <div class="item">
+                            <h1>Today's  Deal</h1>
+                            <img class="img-fluid" src="assets/img/tv.webp" alt="">
+                          </div><!--enditem-->
+                        </div><!--endcol-->
+                        <div class="col-sm-6">
+                          <div class="details">
+                            <h2 class="cr3">Realme 80 cm (32 inch) </h2>
+                            <p class="cr4">HD Ready LED Smart Android TV  (TV 32)</p>
+                            <div class="rating">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div><!--endrating-->
+                            <p class="cr1">Rs. 9999 to Rs. 12000</s></p>
+                        <a href="" class="btn btn-food">add to cart</a>
+                      </div><!--enddetails-->
+                    </div><!--endcol-->
+                  </div><!--endrow-->
+                </div><!--endcontainer-->
+              </div><!--endcarousel-item-->
+        </div><!--endslidesliderproduct-->
+      </div><!--endrow-->
+      </div><!--endcontainer-->
+      </div><!--endbg-product-->
+      </div>
+      </div>
+
+        
+    <!--Trending Products-->
+    <div class="container">
+        <div class="row mt-2  mb-8 mb-lg-11"> 
+            <div class="col-md" style="margin-top:24px;margin-bottom: 80px;">
+                <h2 align="center" style="margin-bottom: 25px;">Trending Products</h2>
+                <div class="row" >
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/wateerpurifier.png" class="card-img-top" alt="..." height="290px">
+                            <div class="card-body">
+                              <h5 class="card-title">8L RO+ Water Purifier </h5>
+                              <p class="card-text">Mineral Booster with Steel Tank.</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/phone.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Redmi 12C</h5>
+                              <p class="card-text">Xiaomi Series
+                                Be A Class Apart.</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/fridge.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Samruddhi Refridgerator</h5>
+                              <p class="card-text">236L Convertible Double Door.</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+    
+                        </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+    <!--Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/BG1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/BG2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/BG3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!--Explore By Category-->
+    <div class="container">
+        <div class="row mt-2  mb-8 mb-lg-11"> 
+            <div class="col-md" style="margin-top:150px;">
+                <h2 align="center" style="margin-bottom: 25px;">Explore By Category</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/ac.webp" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Air Conditioners</h5>
+                              <p class="card-text">Chill Out Anytime, Anywhere! Get Your Cool On with Our Sizzling Hot Deals on Air Conditioners ❄️🔥</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/laptop.jpeg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Laptops</h5>
+                              <p class="card-text">Upgrade Your Digital Game with Our Laptop Extravaganza!Unleash the Power of Technology Today!</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/tv.webp" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Television</h5>
+                              <p class="card-text">Transform Your Living Room into a Cinematic Haven! Dive into TV Wonderland Experience!</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top:30px">
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/phone2.jpg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Mobile Phones</h5>
+                              <p class="card-text">Rent the Latest Mobile Phones and Stay Connected in Style. Your Tech Upgrade Awaits! .</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/books.jpg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Books</h5>
+                              <p class="card-text">Escape to Another World, One Page at a Time 📚✨ #ReadingRendezvous </p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class=" single-review card" style="width: 18rem;">
+                            <img src="assets/img/washingmachine2.jpeg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Washing Machine</h5>
+                              <p class="card-text">Wave Goodbye to Laundry Day Hassles!Introducing Our Stellar Selection of Washing Machines.</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top:30px;">
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/fridge2.jpg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Refridgerator</h5>
+                              <p class="card-text">Keep it Fresh, Keep it Cool!Food Storage, Simplified! #CoolCuisine  #UpgradeToday </p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/cpu.gif" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">CPU's</h5>
+                              <p class="card-text">Upgrade Your Computing with Top-Notch CPUs. Speed, Precision, and Power at Your Fingertips!</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/moven.jpg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Microwave Oven</h5>
+                              <p class="card-text">Explore Oven Collection and Make Cooking a Breeze. Delicious Dishes, in Minutes! #MicrowaveMagic </p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-4">
+                        <div class=" single-review card" style="width: 18rem;">
+                            <img src="assets/img/wp.jpg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Water Purifier</h5>
+                              <p class="card-text">Quench Your Thirst for Purity! Discover Water Purifiers and Sip with Confidence. </p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/ipad.jpeg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">iPad</h5>
+                              <p class="card-text">Dive into Limitless Possibilities with Our Latest iPad Collection. Creativity, Productivity, and Beyond! </p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-review card" style="width: 18rem;">
+                            <img src="assets/img/keyboards.jpg" class="card-img-top" alt="..." height="200px">
+                            <div class="card-body">
+                              <h5 class="card-title">Keyboards</h5>
+                              <p class="card-text">Find Your Perfect Key to Comfort and Efficiency. Type Like Never Before!</p>
+                              <a href="#" class="btn btn-primary">Rent Out</a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+  <!--Testimonial 2-->
+
+      <section id="review" class="review-area ptb_100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center" style="margin-top: 150px;">
+                        <h2 class="text-capitalize">What our customers are saying</h2>
+                        <p class="d-none d-sm-block mt-4">110K+ Happy Subscribers!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 res-margin">
+                    <!-- Single Review -->
+                    <div class="single-review card">
+                        <!-- Card Top -->
+                        <div class="card-top p-4">
+                            <h4 class="text-primary mt-4 mb-3">Excellent service &amp; support!!</h4>
+                            <!-- Review Text -->
+                            <div class="review-text">
+                                <p>I recently used this renting website to get a laptop for a temporary project, and the experience was fantastic! The laptop I received was in pristine condition and performed flawlessly. The rental process was smooth, and the customer service was top-notch. I'll definitely be coming back here for all my electronics needs.</p>
+                            </div>
+                        </div>
+                        <!-- Reviewer -->
+                        <div class="reviewer media bg-gray p-4">
+                            <!-- Reviewer Media -->
+                            <div class="reviewer-meta media-body align-self-center ml-4">
+                                <h5 class="reviewer-name color-primary mb-2">Sarah G</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 res-margin">
+                    <!-- Single Review -->
+                    <div class="single-review card">
+                        <!-- Card Top -->
+                        <div class="card-top p-4">
+                            <h4 class="text-primary mt-4 mb-3">Nice work! Keep it up</h4>
+                            <!-- Review Text -->
+                            <div class="review-text">
+                                <p>I rented a refrigerator from this website when my old one broke down unexpectedly, and I couldn't be happier with the service. The delivery was prompt, and the refrigerator was clean and in excellent working condition. It saved me from a lot of hassle during a stressful time. I highly recommend this website for electronic rentals</p>
+                            </div>
+                        </div>
+                        <!-- Reviewer -->
+                        <div class="reviewer media bg-gray p-4">
+                            <!-- Reviewer Media -->
+                            <div class="reviewer-meta media-body align-self-center ml-4">
+                                <h5 class="reviewer-name color-primary mb-2">James Hasan</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <!-- Single Review -->
+                    <div class="single-review card">
+                        <!-- Card Top -->
+                        <div class="card-top p-4">
+                            <h4 class="text-primary mt-4 mb-3">Great support!!</h4>
+                            <!-- Review Text -->
+                            <div class="review-text">
+                                <p>I rented a water purifier for my family's vacation, and it was a game-changer! It provided us with clean, purified water throughout our trip, and the return process was effortless. The range of electronics available on this website is impressive. A must-try for anyone in need of electronics on a temporary basis! Definetly a must Try</p>
+                            </div>
+                            </div>
+                        <!-- Reviewer -->
+                        <div class="reviewer media bg-gray p-4">
+                            <div class="reviewer-meta media-body align-self-center ml-4">
+                                <h5 class="reviewer-name color-primary mb-2">Alex R</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+
+    </div>
+      <!--Footer-->
+      <footer class="footer-section" style="margin-top: 150px;">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>4343 Avenue,Beside AMB Mall, Gachibowli,Andhra Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>interlet@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p align="center">Copyright &copy; 2023, All Right Reserved </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+       
+              
+    
+    
+                
+
+
+                        
+                            
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
