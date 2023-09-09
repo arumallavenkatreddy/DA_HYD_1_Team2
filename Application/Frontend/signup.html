@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interLet</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="style2.css" rel="stylesheet">
+
+
+</head>
+
+<body style="background-color: #343A40;" >  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-md-auto gap-2">
+          <li class="nav-item rounded">
+            <a class="nav-link active" aria-current="page" href="signup.html"><i class="bi bi-house-fill me-2"></i>SignUp/Register</a>
+          </li>
+          <li class="nav-item rounded">
+            <a class="nav-link" href="login.html"><i class="bi bi-people-fill me-2"></i>Login</a>
+          </li>
+         
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container">
+    <section class="h-100 bg-dark">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col">
+            <div class="card card-registration my-4">
+              <div class="row g-0">
+                <div class="col-xl-6 d-none d-xl-block">
+                  <img src="assets/img/logingif.gif"
+                    alt="Sample photo" class="img-fluid"
+                    style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                </div>
+                <div class="col-xl-6">
+                  <div class="card-body p-md-5 text-black">
+                    <h3 class="mb-5 text-uppercase">SignUp/Register to Rent</h3>
+                    <form action="login.html" name="registration" class="registartion-form" onsubmit="return formValidation()">
+                      <table>
+                        <tr>
+                          <td><label for="name">Name:</label></td>
+                          <td><input type="text" name="name" id="name" placeholder="your name"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="email">Email:</label></td>
+                          <td><input type="text" name="email" id="email" placeholder="your email"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="password">Password:</label></td>
+                          <td><input type="password" name="password" id="password"></td>
+                        </tr>
+                        <tr>
+                          <td><label for="phoneNumber">Phone Number:</label></td>
+                          <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+                        </tr>
+                        <tr>
+                          <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+                        </tr>
+                      </table>
+                    </form>             
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  </div>
+
+  <script>
+    // Select all input elements for varification
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const phoneNumber = document.getElementById("phoneNumber");
+
+// function for form varification
+function formValidation() {
+
+// checking name length
+if (name.value.length < 2 || name.value.length > 20) {
+alert("Name length should be more than 2 and less than 21");
+name.focus();
+return false;
+}
+// checking email
+
+// checking password
+if (!password.value.match(/^.{5,15}$/)) {
+alert("Password length must be between 5-15 characters!");
+password.focus();
+return false;
+}
+// checking phone number
+if (!phoneNumber.value.match(/^[1-9][0-9]{9}$/)) {
+alert("Phone number must be 10 characters long number and first digit can't be 0!");
+phoneNumber.focus();
+return false;
+}
+return true;
+}
+</script>
+
+</body>
+</html>
+
+
+
