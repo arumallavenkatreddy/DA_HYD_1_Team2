@@ -1,0 +1,9 @@
+create db Interlet;
+use Interlet;
+create table User(userId numeric(5) Not Null Primary Key,userName varchar(30) Not Null,role varchar(30) Not Null,phoneNumber numeric(10) Not Null,emailId varchar(30) Not Null,password varchar(16) Not Null);
+desc User;
+insert into User values(00001,'Admin','Admin',9876543201,'admin@org.co.in','Admin@123');
+create table Asset(assetId numeric(6) Not Null primary Key,assetName varchar(20) Not Null,assetType varchar(10) Not Null,description varchar(100) Not Null,dateAdded Date Not Null,isAvailable boolean Not Null,lendingPeriod INT Not Null,lateFee INT Not Null);
+desc Asset;
+create table BorrowedAsset(userId numeric(5) Not Null,assetId numeric(6) Not Null,userName varchar(30) Not Null,assetName varchar(20) Not Null,assetType varchar(20) Not Null,dateBorrowed Date Not Null,status varchar(10) Not Null);
+desc BorrowedAsset;
