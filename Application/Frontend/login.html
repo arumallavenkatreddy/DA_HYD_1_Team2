@@ -9,7 +9,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link href="style2.css" rel="stylesheet">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 
 </head>
 
@@ -28,18 +28,19 @@
               <div class="col-xl-6">
                 <div class="card-body p-md-5 text-black">
                   <h3 class="mb-5 text-uppercase">Login</h3>
-                  <form id="form" class="form">
+                  <div id="error"></div>
+                  <form id="form" class="form" action="/" method="get">
                  
                   <div class="form-outline mb-4">                  
 
-                    <label class="form-label" for="form3Example8" name="email">Email ID</label>
-                    <input type="text" id="form3Example8" class="form-control form-control-lg" required/>
+                    <label class="form-label" for="form3Example8" name="form3Example8">Email ID</label>
+                    <input type="text" id="form3Example8" name="form3Example8" class="form-control form-control-lg" required/>
                     <p id="emailError"></p>
                     
                   </div>  
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example99" name="password">Password</label>
-                    <input type="text" id="form3Example99" class="form-control form-control-lg" required />
+                    <label class="form-label" for="form3Example99" name="form3Example99">Password</label>
+                    <input type="text" id="form3Example99" name="form3Example99" class="form-control form-control-lg" required />
                     <p id="passwordError"></p>
                    
                   </div>  
