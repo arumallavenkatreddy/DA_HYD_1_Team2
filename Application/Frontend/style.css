@@ -4,6 +4,30 @@
     }
   }
 
+  /* Rent Out Section*/
+
+/* Media query for screens with a maximum width of 768px */
+/*@media (max-width: 768px) {
+  .container .image-row {
+      flex-direction: column; 
+      align-items: center;
+  }
+
+  .container .image-row img {
+      max-width: 100%; 
+      width: auto; 
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container  .image-row img {
+      
+      width: auto;
+  }
+}*/
+
+
   
 /*The second carousel css*/
 
@@ -102,9 +126,7 @@
   #sliderproduct .col-sm-4.mr-auto {
     margin-top: 22px;
   }
-  
-  *{}
-  
+
   #sliderproduct p.cr1 {
     font-size: 20px;
     font-weight: 500;
@@ -445,3 +467,15 @@
 .contact-info a {
   padding-right: 0;
 }
+
+
+.team-grid .item .box {
+  text-align:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  height:100px;
+  position:relative;
+  overflow:hidden;
+}
+
