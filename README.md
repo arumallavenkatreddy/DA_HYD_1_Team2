@@ -124,7 +124,7 @@ By adopting Vercel for our frontend deployments, we ensure that the E-Asset Mana
 
 ## **Project Dashboard Overview**
 
-Our project dashboard on GitHub is a central hub to monitor and manage various aspects of our project:
+Our [**project dashboard**](https://github.com/users/Shankar-Rajan/projects/1) on GitHub is a central hub to monitor and manage various aspects of our project:
 
 1. **Issues**:
     
