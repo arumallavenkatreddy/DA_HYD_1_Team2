@@ -153,8 +153,7 @@ Our project dashboard on GitHub is a central hub to monitor and manage various a
 
 *Details about cloning the repo, setting up the environment, and running the application.*
 
-### **Our Contributors**
-
+## **Our Contributors**
 
 1. [**Shankar Rajan**](https://github.com/Shankar-Rajan)
     
