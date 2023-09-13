@@ -5,8 +5,10 @@
 E-Asset Management System is a digital solution designed to streamline the process of managing assets within an organization, offering dedicated functionalities for both users and administrators.
 
 ## **Table of Contents**
-
+  
 * [**Overview**](#overview)
+
+* [**Snapshots**](#snapshots)
     
 * [**Features**](#features)
     
@@ -23,13 +25,18 @@ E-Asset Management System is a digital solution designed to streamline the proce
 * [**Project Dashboard Overview**](#project-dashboard-overview)
     
 * [**Setup and Installation**](#setup-and-installation)
-    
+
+* [**Our Contributors**](#our-contributors)
+
 * [**License**](#license)
     
 
 ## **Overview**
 
 This digital platform ensures seamless tracking of assets like laptops, books, mobiles, and more. It allows for asset availability, location, borrower details, and borrowing history to be readily accessible, all within a user-friendly interface.
+
+## **Snapshots**
+
 
 ## **Features**
 
@@ -146,9 +153,28 @@ Our project dashboard on GitHub is a central hub to monitor and manage various a
 
 *Details about cloning the repo, setting up the environment, and running the application.*
 
-## **Contributing**
+### **Our Contributors**
 
-We welcome contributions! Please see our [**Contributor's Guide**](https://chat.openai.com/c/LINK_TO_CONTRIBUTING.MD) for more details.
+1. [**Shankar Rajan**](https://github.com/Shankar-Rajan)
+    
+2. [**Arumalla Venkat Reddy**](https://github.com/arumallavenkatreddy)
+    
+3. [**Visali Pemmaraju**](https://github.com/Visali-vish)
+    
+4. [**Sriram P**](https://github.com/sriramp8402)
+    
+5. [**Harshita Sharma**](https://github.com/harshitaa-work)
+    
+6. [**Bharathnath**](https://github.com/bharath9180)
+    
+7. [**Mutyala Umashankari**](https://github.com/mutyalaumashankari)
+
+8. [**Laxmi Prasanna**](https://github.com/Prasanna292001)
+
+9. [**Rasmita kar**](https://github.com/Rasmitakar)
+    
+
+Thank you to all our contributors for their valuable contributions to this project! Your dedication and efforts are greatly appreciated.
 
 ## **License**
 
