@@ -151,7 +151,7 @@ Our [**project dashboard**](https://github.com/users/Shankar-Rajan/projects/1) o
 
 ## **Setup and Installation**
 
-**Accessing the Backend**
+### **Accessing the Backend**
 
 The backend of our application is located in the "Backend" folder within the application's directory structure. To interact with the backend, follow these steps:
 
@@ -164,7 +164,7 @@ The backend of our application is located in the "Backend" folder within the app
 
 By following these steps, you can access and run the backend of your application, which is written in Java and seamlessly connected to your database.
 
-**Accessing the Frontend**
+### **Accessing the Frontend**
 
 The frontend code of our application can be found in the "Application" folder. It is responsible for the user interface and can be accessed and run locally and via a deployed version on Vercel. Here are the steps to interact with the frontend:
 
