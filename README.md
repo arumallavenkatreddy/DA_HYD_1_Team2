@@ -151,7 +151,45 @@ Our [**project dashboard**](https://github.com/users/Shankar-Rajan/projects/1) o
 
 ## **Setup and Installation**
 
-*Details about cloning the repo, setting up the environment, and running the application.*
+**Accessing the Backend**
+
+The backend of our application is located in the "Backend" folder within the application's directory structure. To interact with the backend, follow these steps:
+
+1. **Access the Backend Directory**: Navigate to the "Backend" folder within the application's root directory.
+    
+2. **Running the Backend**: The backend is implemented using Java. To run it, ensure you have Java installed on your system. Open a terminal or command prompt, navigate to the "Backend" folder, and execute the Java program through either STS or Eclipse.
+    
+3. **Database Connection**: The backend code is already connected to the database. Make sure that you have created the necessary database for your application. The backend code will establish a connection to this database when it runs.
+    
+
+By following these steps, you can access and run the backend of your application, which is written in Java and seamlessly connected to your database.
+
+**Accessing the Frontend**
+
+The frontend code of our application can be found in the "Application" folder. It is responsible for the user interface and can be accessed and run locally and via a deployed version on Vercel. Here are the steps to interact with the frontend:
+
+1. **Locally Accessing the Frontend**:
+    
+    a. **Navigate to the Frontend Directory**: Begin by navigating to the "Application" folder within the application's directory structure. This is where the front-end code is located.
+    
+    b. **Main Page**: The primary entry point for the front end is the `index.html` file. Open this file in a web browser to access the main page of your application.
+    
+    c. **User and Admin Views**: Depending on your application's functionality, you may have separate views for users and administrators. These views will have functionalities and can typically be accessed via different URLs or routes. Refer to your application's documentation or codebase to find the specific routes for these views.
+    
+    d. **Local Development Server**: During development, you can run the front end locally by using a development server. This allows you to test your application on your local machine.
+    
+    Ensure you have the necessary dependencies and tools installed, such as Node.js and npm, for your front-end project.
+    
+    e. **Access via Localhost**: Once the development server runs, you can access the front end by opening a web browser and navigating to the local host port.
+    
+2. **Deployed Version on Vercel**:
+    
+    a. **Real-Time Site**: The front end of your application is also deployed on Vercel. This deployment lets you access your application in real-time through a publicly accessible URL. This deployed version will reflect Any changes to the frontend code.
+    
+    b. **Vercel Deployment**: To access the deployed frontend on Vercel, you can use the provided URL. The deployed site can be seen here: [https://da-hyd-1-team2.vercel.app/](https://da-hyd-1-team2.vercel.app/)
+    
+
+By following these steps, you can access and run the frontend of your application, whether locally for development or via the Vercel deployment for real-time access and updates.
 
 ## **Our Contributors**
 
