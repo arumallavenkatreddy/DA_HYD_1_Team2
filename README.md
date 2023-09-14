@@ -27,8 +27,6 @@ E-Asset Management System is a digital solution designed to streamline the proce
 * [**Setup and Installation**](#setup-and-installation)
 
 * [**Our Contributors**](#our-contributors)
-
-* [**License**](#license)
     
 
 ## **Overview**
@@ -222,7 +220,3 @@ By following these steps, you can access and run the frontend of your applicatio
     
 
 Thank you to all our contributors for their valuable contributions to this project! Your dedication and efforts are greatly appreciated.
-
-## **License**
-
-This project is licensed under the MIT License - see the [**LICENSE.md**](http://LICENSE.md) file for details.
