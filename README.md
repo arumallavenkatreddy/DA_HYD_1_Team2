@@ -37,7 +37,15 @@ This digital platform ensures seamless tracking of assets like laptops, books, m
 
 ## **Snapshots**
 
+**Frontend**
+
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694708030808/27fec769-5a81-4af6-a2ba-054aabb4da58.jpeg)
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694708168068/55d35a65-1bf9-4160-b790-2ac5add91d37.jpeg)
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694708179784/8499b9ad-4ff8-4a91-a246-a8636cf60db5.jpeg)
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1694708187020/62423c0d-90fe-4944-b7bf-e31e17fb8988.jpeg)
 
 ## **Features**
 
