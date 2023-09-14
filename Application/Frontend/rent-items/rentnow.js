@@ -47,7 +47,7 @@ let products = [
     {
         id: 6,
         name: 'HUL 8L Water Purifier RO+ Product Dimensions	14.2L x 13.8W x 17.6H Centimeters Package Information	Glass Power Electric get it at -5% off per month',
-        image: 'wateerpurifier.PNG',
+        image: 'wp6.png',
         price: 1499
     }
 ];

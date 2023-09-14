@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="new.css" rel="stylesheet" />
+  </head>
+  <body>
+   
+    <div class="sidebar">
+      <!-- Add any sidebar content here, or leave it empty for a blank sidebar -->
+    </div>
+    <div class="navbar">
+    <div class="logo">
+            <a href="adminpage.html">
+                <img src="assets/img/logo.png" height="35px" width="75px" alt="Your Logo">
+            </a>
+        </div>
+
+      <a href="logoutdone.html" class="logout-btn">Logout</a>
+      <!-- Logout button -->
+      <a href="#" onclick="showUserHistory()">User History</a>
+      <a href="#" onclick="showAssets()">Assets Available</a>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+        <!-- Add any sidebar content here, or leave it empty for a blank sidebar -->
+      </div>
+      <div id="content">
+    <h3> Click on "ASSETS AVAILABLE" Tab to check the available content </h3>
+    <h3> Click on "USER HISTORY" Tab to get a list of all the Users </h3>
+
+
+        <div id="user-history"></div>
+        <div id="assets-available"></div>
+      </div>
+    </div>
+    <div
+      onclick="document.getElementById('popup').style.display='none'"
+      id="popup"
+    ></div>
+
+    <script>
+      // Your JavaScript code here
+      const assetsData = [
+        {
+          assetId: 1,
+          name: "Laptop",
+          total: 10,
+          inUse: 4,
+          fine: 100,
+          img: "https://risedesk.io/cdn/shop/articles/IMG_8966.jpg?v=1660582188",
+        },
+        {
+          assetId: 2,
+          name: "Phone",
+          total: 20,
+          inUse: 7,
+          fine: 30,
+          img: "assets/img/phone2.jpg",
+        },
+        {
+          assetId: 3,
+          name: "Washing Machine",
+          total: 15,
+          inUse: 3,
+          fine: 75,
+          img: "assets/img/wm2.png",
+        },
+      ];
+
+      const usersData = [
+        {
+          id: 1,
+          name: "User 1",
+          type: "Laptop",
+          description:
+            "Dell XPS 13 (2021) Processor Generation: 11th Gen Intel Core i5/i7 RAM: 8GB/16GB/32GB",
+          dateAdded: "2023-09-09",
+          assetId: 1,
+          endDate: "2023-09-19",
+          fine: 0,
+          email: "user1@example.com",
+        },
+        {
+          id: 2,
+          name: "User 2",
+          type: "Book",
+          description: "To Kill a Mockingbird by Harper Lee",
+          dateAdded: "2023-09-05",
+          assetId: 2,
+          endDate: "2023-09-15",
+          fine: 0,
+          email: "user2@example.com",
+        },
+        {
+          id: 3,
+          name: "User 3",
+          type: "Mobile",
+          description: "iPhone 13 Pro RAM: 6GB",
+          dateAdded: "2023-08-04",
+          assetId: 1,
+          endDate: "2023-08-12",
+          fine: 0,
+          email: "user3@example.com",
+        },
+        {
+          id: 4,
+          name: "User 4",
+          type: "Laptop",
+          description:
+            "Lenovo ThinkPad X1 Carbon (2021) Processor Generation: 11th Gen Intel Core i5/i7 RAM: 8GB/16GB/32GB",
+          dateAdded: "2023-07-04",
+          assetId: 1,
+          endDate: "2023-07-12",
+          fine: 0,
+          email: "user3@example.com",
+        },
+        {
+          id: 5,
+          name: "User 5",
+          type: "Book",
+          description: "The Great Gatsby by F. Scott Fitzgerald",
+          dateAdded: "2023-06-04",
+          assetId: 1,
+          endDate: "2023-06-12",
+          fine: 0,
+          email: "user3@example.com",
+        },
+        {
+          id: 6,
+          name: "User 6",
+          type: "Mobile",
+          description: "Samsung Galaxy S21 Ultra RAM: 12GB/16GB",
+          dateAdded: "2023-05-04",
+          assetId: 1,
+          endDate: "2023-05-12",
+          fine: 0,
+          email: "user3@example.com",
+        },
+
+        {
+          id: 7,
+          name: "User 7",
+          type: "Laptop",
+          description:
+            "HP Spectre x360 (2021) Processor Generation: 11th Gen Intel Core i5/i7 RAM: 8GB/16GB/32GB",
+          dateAdded: "2023-04-04",
+          assetId: 1,
+          endDate: "2023-04-12",
+          fine: 0,
+          email: "user3@example.com",
+        },
+
+        {
+          id: 8,
+          name: "User 8",
+          type: "Book",
+          description: "Pride and Prejudice by Jane Austen",
+          dateAdded: "2023-03-04",
+          assetId: 1,
+          endDate: "2023-03-12",
+          fine: 0,
+          email: "user3@example.com",
+        },
+        {
+          id: 9,
+          name: "User 9",
+          type: "Mobile",
+          description: "OnePlus 9 Pro RAM: 8GB/12GB",
+          dateAdded: "2023-02-04",
+          assetId: 1,
+          endDate: "2023-02-12",
+          fine: 0,
+          email: "user3@example.com",
+        },
+      ];
+
+      function calculateFine(assetType, endDate) {
+        const currentDate = new Date();
+        const end = new Date(endDate);
+        const timeDifference = end - currentDate;
+        const daysLate = Math.max(
+          0,
+          Math.ceil(timeDifference / (1000 * 3600 * 24))
+        );
+
+        const asset = assetsData.find((asset) => asset.name === assetType);
+
+        if (asset) {
+          return daysLate * asset.fine;
+        } else {
+          return 0;
+        }
+      }
+
+      function showUserDetails(userId) {
+        const user = usersData.find((user) => user.id === userId);
+
+        if (user) {
+          const userHistoryElement = document.getElementById("popup");
+          // const userHistoryElement = document.getElementById("user-history");
+          const fine = calculateFine(user.type, user.endDate);
+
+          const userDetails = `
+          <div class='card'>
+                <h2>User Details</h2>
+                <p><b>ID:</b> ${user.id}</p>
+                <p><b>Name:</b> ${user.name}</p>
+                <p><b>Type:</b> ${user.type}</p>
+                <p><b>Description:</b> ${user.description}</p>
+                <p><b>Date Added:</b> ${user.dateAdded}</p>
+                <p><b>Asset ID:</b> ${user.assetId}</p>
+                <p><b>End Date:</b> ${user.endDate}</p>
+                <p><b>Fine Amount:</b> $${fine}</p>
+                <p><b>Email:</b> ${user.email}</p>
+                </div>
+            `;
+          userHistoryElement.innerHTML = userDetails;
+          userHistoryElement.style.display = "flex";
+        }
+      }
+
+      function showUserHistory() {
+        const userHistoryElement = document.getElementById("user-history");
+        const assetsAvailableElement =
+          document.getElementById("assets-available");
+        const userHistory = `
+            <h1>User History</h1>
+            ${usersData
+              .map(
+                (user) =>
+                  `<button  class="btn" onclick="showUserDetails(${user.id})">${user.name}</button><br>`
+              )
+              .join("")}
+        `;
+        userHistoryElement.style.display = "block";
+        assetsAvailableElement.style.display = "none";
+        userHistoryElement.innerHTML = userHistory;
+      }
+
+      function showAssets() {
+        const assetsAvailableElement =
+          document.getElementById("assets-available");
+        const userHistoryElement = document.getElementById("user-history");
+        let assetsAvailable = `<h1>Assets Available</h1><div class='assetsContainer'>`;
+        for (let i = 0; i < assetsData.length; i++) {
+          const asset = assetsData[i];
+          const freeAssets = asset.total - asset.inUse;
+          assetsAvailable += `<div class='assetItem'><img class='assetImg' src="${asset.img}"/><b>${asset.name}</b><br/> Total: ${asset.total}, In Use: ${asset.inUse}, Free: ${freeAssets}</div>`;
+        }
+        assetsAvailable += "</div>";
+        assetsAvailableElement.style.display = "block";
+        userHistoryElement.style.display = "none";
+        assetsAvailableElement.innerHTML = assetsAvailable;
+      }
+    </script>
+  </body>
+</html>
